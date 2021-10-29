@@ -23,22 +23,22 @@
 // }
 
 
-let parola = prompt('inserire una parola');
+// let parola = prompt('inserire una parola');
 
-let parolaInversa = invertiParola(parola);
+// let parolaInversa = invertiParola(parola);
 
-if(parola === parolaInversa){
-  console.log('La parola è palindroma')
-}else {
-  console.log('La parola non è palindroma')
-}
+// if(parola === parolaInversa){
+//   console.log('La parola è palindroma')
+// }else {
+//   console.log('La parola non è palindroma')
+// }
 
 
-function invertiParola(parola){
-  let parolaInversa = parola.split('').reverse().join('');  
+// function invertiParola(parola){
+//   let parolaInversa = parola.split('').reverse().join('');  
 
-  console.log(parola)
-  console.log(parolaInversa)
-  return parolaInversa;
+//   console.log(parola)
+//   console.log(parolaInversa)
+//   return parolaInversa;
 
-}
+// }
