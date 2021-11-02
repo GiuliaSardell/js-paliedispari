@@ -14,59 +14,64 @@ Dichiariamo chi ha vinto.
 6- stampare chi ha vinto
 */
 
-let pari;
-let dispari;
 
-let pariODispari = prompt('Digitare pari o dispari');
-console.log('L utente ha scelto ',pariODispari)
 
-if(pariODispari == dispari){
-  let dispari = pariODispari
+
+
+
+// let pari;
+// let dispari;
+
+// let pariODispari = prompt('Digitare pari o dispari');
+// console.log('L utente ha scelto ',pariODispari)
+
+// if(pariODispari == dispari){
+//   let dispari = pariODispari
  
-   console.log('l utente ha sceltoooooo', dispari)
- } else {
-   let pari = pariODispari
-   console.log('l utente ha sceltoooooo', pari)
- }
+//    console.log('l utente ha sceltoooooo', dispari)
+//  } else {
+//    let pari = pariODispari
+//    console.log('l utente ha sceltoooooo', pari)
+//  }
  
 
-let numeroUtente = parseInt(prompt('Scegliere un numero da 1 a 5'));
-console.log('L utente ha scelto il numero ',numeroUtente)
+// let numeroUtente = parseInt(prompt('Scegliere un numero da 1 a 5'));
+// console.log('L utente ha scelto il numero ',numeroUtente)
 
-let numeroPc = numeroRandom(1,5)
-console.log('Il numero del pc è: ',numeroPc)
-
-
-
-let miaSomma = sommaNumeri(numeroUtente,numeroPc)
-console.log('La somma dei due numeri è: ',miaSomma)
-
-if(miaSomma%2 != 0){
- let sommaDispari = miaSomma
-
-  console.log('Il risultato è:', sommaDispari)
-} else {
-  let sommaPari = miaSomma
-  console.log('Il risultato è:', sommaPari)
-}
-
-
-if((pariODispari = dispari) && (sommaDispari = miaSomma)) {
-  console.log('ha vinto L UTENTE')
-
-}else if((pariODispari = pari) && (sommaPari = miaSomma)){
-  console.log('ha vinto L UTENTE')
-
-} else {
-  console.log('ha vinto IL PC')
-}
+// let numeroPc = numeroRandom(1,5)
+// console.log('Il numero del pc è: ',numeroPc)
 
 
 
-function numeroRandom (min, max){
-  return Math.floor(Math.random()*max)+min
-}
+// let miaSomma = sommaNumeri(numeroUtente,numeroPc)
+// console.log('La somma dei due numeri è: ',miaSomma)
 
-function sommaNumeri (num1, num2){
-  return num1+num2
-}
+// if(miaSomma%2 != 0){
+//  let sommaDispari = miaSomma
+
+//   console.log('Il risultato è:', sommaDispari)
+// } else {
+//   let sommaPari = miaSomma
+//   console.log('Il risultato è:', sommaPari)
+// }
+
+
+// if((pariODispari = dispari) && (sommaDispari = miaSomma)) {
+//   console.log('ha vinto L UTENTE')
+
+// }else if((pariODispari = pari) && (sommaPari = miaSomma)){
+//   console.log('ha vinto L UTENTE')
+
+// } else {
+//   console.log('ha vinto IL PC')
+// }
+
+
+
+// function numeroRandom (min, max){
+//   return Math.floor(Math.random()*max)+min
+// }
+
+// function sommaNumeri (num1, num2){
+//   return num1+num2
+// }

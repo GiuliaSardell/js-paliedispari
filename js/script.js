@@ -42,3 +42,26 @@
 //   return parolaInversa;
 
 // }
+
+const parolaIns = prompt('inserire una parola')
+
+isPalindroma(parolaIns)
+console.log(parolaIns)
+
+function isPalindroma(parola){
+  let parolaGirata = '';
+
+  for(let i = parola.length - 1; i >= 0; i--){
+    parolaGirata += parola[i];
+    console.log(parolaGirata);
+  }
+
+
+  // parolaGirata =  parola.split('').reverse().join('');
+
+  //2. confronto se la porla inserita è uguale a quella girata
+  //3. restituisco true se è palinidroma e false se non lo è
+  if(parolaGirata.toUpperCase() === parola.toUpperCase()) return true;
+  return false;
+
+}
