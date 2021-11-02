@@ -75,3 +75,31 @@ Dichiariamo chi ha vinto.
 // function sommaNumeri (num1, num2){
 //   return num1+num2
 // }
+
+
+const pariDispari = promt('Inserisci pari/dispari');
+const numeroUtente = promt('Iserisci un numero da 1 a 9');
+const numeroPc = getRandomInt(1,9);
+console.log(numeroPc);
+const somma = numeroPc + numeroUtente;
+console.log(somma);
+const risultato = checkPariDispari(somma);
+
+console.log(risultato);
+
+if(risultato === pariDispari){
+  console.log('Ha vinto il giocarore')
+}else{
+  console.log('Ha vinto il PC')
+}
+
+function checkPariDispari(numero){
+  if(numero % 2) {
+    return 'dispari';
+  }
+  return 'pari';
+}
+
+function getRandomInt(min,max){
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
